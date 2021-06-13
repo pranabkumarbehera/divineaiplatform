@@ -1,0 +1,39 @@
+{% extends 'pages/base.html' %}
+{% block title %} Electrician {% endblock %}
+{% block body %}
+<div class="container-fluid">
+    <div class="row main-content bg-success text-center">
+        <div class="col-md-4 text-center company__info">
+            <!-- <span class="company__logo"><h2><span class="fa fa-android"></span></h2></span> -->
+            <img src="">
+            <h4 class="company_title"></h4>
+        </div>
+        <div class="col-md-8 col-xs-12 col-sm-12 login_form ">
+            <div class="container-fluid">
+                <div class="row">
+                    <h2>Electrician</h2>
+                </div>
+                <div class="row">
+                    <form control="" class="form-group" method="POST">{% csrf_token %}
+                        <!-- <div class="row">
+                            <input type="text" name="Name" id="username" class="form__input" placeholder="Name">
+                        </div>
+                        <div class="row">
+                            <input type="text" name="Mobile Number" id="MobileNumber" class="form__input" placeholder="Mobile Number">
+                        </div> -->
+                        <div class="row">
+                            <input type="text" name="Address" id="Address" class="form__input" placeholder="Address">
+                        </div>
+                        <div class="row">
+                            <input type="text" name="Problem" id="Problem" class="form__input" placeholder="Problem">
+                        </div>
+                        <div class="row">
+                            <input type="submit" value="BOOK" class="btn">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

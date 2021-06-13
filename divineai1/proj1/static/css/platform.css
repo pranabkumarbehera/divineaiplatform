@@ -1,0 +1,285 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	text-align: center;
+}
+.wrapper {
+	width: 1170px;
+	margin: 0 auto;
+}
+
+header {
+	height: 60px;
+	background: #e91e1ef8;
+	width: 100%;
+	z-index: 10;
+	position: fixed;
+}
+.logo {
+	width: 30%;
+    float: left;
+	left:10px;
+	line-height: 60px;
+}
+.logo a {
+	text-decoration: none;
+	font-size: 30px;
+	font-family: poppins;
+	color: #fff;
+	letter-spacing: 5px;
+}
+
+
+/* navbar */
+
+
+#navbar{
+    display: flex;
+    width: auto;
+    text-align: center;
+    padding-top: 10px;
+    z-index: -1;
+}
+#navbar ul{
+    list-style: none;
+    display: flex;
+}
+#navbar::before{
+    content:"";
+    position:absolute;
+    height: 45px;
+    width:100%;
+    z-index:-1;
+}
+#navbar ul li{
+    width: 170px;
+    text-align: center;
+    padding: 5px;
+    margin-top: 1%;
+    font-size: 15px;
+   position:relative;  
+}
+#navbar ul li a{
+    text-decoration: none;
+    font-style: oblique;
+    font-size: 20px;
+    color: rgb(245, 239, 239);
+	font-family: 'Original Surfer', cursive;
+
+}
+#navbar ul li:hover{
+    background-color: hsla(135, 40%, 34%, 0.5);
+    border-radius: 25px;
+
+}
+#navbar ul ul{
+    display: none;
+}
+#navbar ul li:hover>ul{
+    display:block;
+ }
+
+/* image slider */ 
+
+#slider {
+	overflow: hidden;
+}
+#slider figure {
+	position: relative;
+    position: fixed;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	animation: 30s slider infinite;
+}
+#slider figure img {
+	width: 20%;
+	float: left;
+	opacity:0.7;
+    height: 450px;
+}
+@keyframes slider {
+	0% {
+		left: 0;
+	}
+	20% {
+		left: 0;
+	}
+	25% {
+		left: -100%;
+	}
+	45% {
+		left: -100%;
+	}
+	50% {
+		left: -200%;
+	}
+	70% {
+		left: -200%;
+	}
+	75% {
+		left: -300%;
+	}
+	95% {
+		left: -300%;
+	}
+	100% {
+		left: -400%;
+	}
+}
+
+ /* contentarea */
+
+
+
+.content-area {
+	width: 100%;
+	top:450px;
+	position:relative;
+	background: #ffffff;
+	height: auto;
+}
+
+
+/* Services Section */
+
+
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{ 
+	border: 4px solid brown;
+    padding: 34px;
+    margin: 2px 55px;
+	height: 400px;
+    border-radius: 28px;
+    background: #ffffff;
+    margin-bottom: 20px;
+	box-shadow: 12px -6px 20px 0px #666;
+	
+}
+
+#services .box img{ 
+	height: 160px;
+	margin: auto;
+	display: block;
+}
+#services-container h1{ 
+	margin-top: 5%;
+   color: rgb(250, 37, 0);
+   font-size: 60px;
+   font-family: 'Coda Caption', sans-serif;
+}
+
+
+#services .box p{
+	color: rgb(5, 133, 133);
+	margin: 5px;
+	font-family: 'Caveat', cursive;
+	line-height: 20px;
+} 
+#services .box h2{
+	color: rgb(0, 133, 60);
+	margin: 10px;
+	line-height: 10px;
+    font-family: 'Bree Serif', serif;
+	font-family: 'Limelight', cursive;
+font-family: 'Original Surfer', cursive;
+
+} 
+
+/* contact */
+
+.contact-in
+{
+	    width: 47%; 
+		height: auto;
+		display: flex;
+		padding: 23px;
+		border-radius: 48px;
+		background: #d2ddca87;
+		box-shadow: 12px -6px 20px 0px #666;
+	
+}
+
+.content-map
+{
+	width: 100%;
+	height: auto;
+	flex: 50%;
+}
+.content-form
+{
+	width: 100%;
+	height: auto;
+	flex: 50%;
+	padding: 30px;
+	text-align: center;
+}
+.content-map iframe
+{
+	width: 100%;
+	height: 100%;
+	
+} 
+.content-form h1
+{
+	margin-bottom: 10px;
+
+}
+.content-form-txt
+{
+	width: 100%;
+	height: 40px;
+	color: #000;
+	border: 1px solid #bcbcbc;
+	border-radius: 50px;
+	outline: none;
+	margin-bottom: 20px;
+	padding: 15px;
+}
+.content-form-txt::placeholder
+{
+	color: #aaa;
+}
+.content-form-textarea
+{
+	width: 100%;
+	height: 130px;
+	color: #000;
+	border: 1px solid #bcbcbc;
+	border-radius: 10px;
+	outline: none;
+	margin-bottom: 20px;
+	padding: 15px;
+	font-family: 'Poppins',sans-serif;
+}
+.content-form-textarea::placeholder
+{
+	color: #aaa;
+}
+.content-form-btn
+{
+	width: 100%;
+	border: none;
+	outline: none;
+	border-radius: 50px;
+	background: #8e2de2;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 10px 0;
+	cursor: pointer;
+	font-size: 18px;
+}
+
+/* footer */
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}

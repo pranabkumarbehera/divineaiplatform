@@ -1,0 +1,22 @@
+{% extends 'pages/base.html' %}
+{% block head %}
+{% load static %}
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{% static 'css/design.css' %}">
+{% endblock %}
+{% block title %} LogInForm {% endblock %}
+{% block body %}
+<div class="container" style="margin-top: 95px;">
+    <div class="circleTop"></div>
+    <div class="content">
+        <h1>Forgot Password ?</h1>
+        <div class="form-group">
+            <label for="">Email</label>
+            <br>
+            <input type="email" class="form" name="" id="" aria-describedby="helpId" placeholder="">
+        </div>
+        <button type="button"><a href="resetpass.html">Verify</a></button>
+    </div>
+</div>
+{% endblock %}
